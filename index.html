@@ -39,7 +39,7 @@
     firebase.initializeApp(firebaseConfig);
 
 
-    
+
 
 
   </script>
@@ -527,22 +527,29 @@
               </div>
             </div>
           </div>
+
+          <ul id="chapterList">
+
+          </ul>
+
           <form id="addChapterForm">
             <label for="chapterTitle">Titre du chapitre :</label><br>
-            <input type="text" id="chapterTitle" name="chapterTitle"><br>
+            <input type="text" id="chapterTitle" name="chapterTitle" placeholder="Entrez le titre du chapitre"
+              required><br>
             <br>
             <label for="question">Question :</label><br>
-            <input type="text" id="question" name="question"><br>
+            <input type="text" id="question" name="question" placeholder="Entrez la question" required><br>
             <br>
             <label for="correctAnswer">Réponse correcte :</label><br>
-            <input type="text" id="correctAnswer" name="correctAnswer"><br>
+            <input type="text" id="correctAnswer" name="correctAnswer" placeholder="Entrez la réponse correcte"
+              required><br>
             <br>
             <label for="incorrectAnswers">Réponses fausses :</label><br>
-            <input type="text" id="incorrectAnswers" name="incorrectAnswers"><br>
+            <input type="text" id="incorrectAnswers" name="incorrectAnswers"
+              placeholder="Entrez les réponses fausses séparées par des points-virgules" required><br>
             <br>
             <input type="submit" value="Envoyer">
           </form>
-
 
           <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
@@ -1179,6 +1186,7 @@
 
 
   <script type="module" src="js/senddata.js"></script>
+  <script type="module" src="js/getdata.js"></script>
 
 
 </body>

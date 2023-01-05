@@ -1,5 +1,6 @@
 var db = firebase.firestore();
 
+
 const form = document.querySelector('#addChapterForm');
 function resetForm() {
   form.reset();
